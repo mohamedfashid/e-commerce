@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* ganeral style */
+:root {
+    --mainYellow: #fdbe02;
+    --mainWhite: #fff;
+    --mainBlack: #071013;
+    --mainGrey: #9b9999;
+    --TransGrey: rgba(0, 0, 0, 0.1);
+  }
+  body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Mali", cursive;
+  }
+  .text-slanted {
+    font-family: "Calligraffitti", cursive;
+  }
+  .btn-yellow{
+      font-size: 1.2rem;
+      color: var(--mainBlack);
+      background: var(--mainYellow);
+      text-transform: capitalize;
+  }
+  .btn-yellow:hover{
+      background: var(--mainBlack);
+      color: var(--mainYellow);
+  }
+  .btn-black{
+      color: var(--mainBlack);
+      background: transparent !important;
+      font-size: 1.2rem;
+      border: 0.1rem solid var(--mainBlack);
+  }
+  .btn-black:hover{
+      color: var(--mainWhite);
+      background: var(--mainBlack) !important;
+  }
+  .text-yellow{
+      color: var(--mainYellow);
+  }
+  .banner-product{
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/pageBcg/productsBcg.jpeg) center/cover fixed no-repeat;
+      min-height: 60vh;
+  }
+  .banner-single-product{
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/pageBcg/singleBcg.jpeg) center/cover fixed no-repeat;
+      min-height: 60vh;
+  }
+  .banner-store{
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/pageBcg/storeBcg.jpeg) center/cover fixed no-repeat;
+      min-height: 60vh;
+  }
+  /* end of ganeral style */
