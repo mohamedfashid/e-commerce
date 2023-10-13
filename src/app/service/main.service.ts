@@ -6,13 +6,13 @@ import { Observable, of } from 'rxjs';
 })
 export class MainService {
 
-  data: any[];
+  // data: any[];
 
   constructor() {
-    this.getProdList().subscribe((content) => {
-      this.data = content;
-      console.log(this.data)
-    });
+    // this.getProdList().subscribe((content) => {
+    //   this.data = content;
+    //   console.log(this.data)
+    // });
    }
 
   // dataUrl = '../assets/json file/data.json';
@@ -26,19 +26,19 @@ export class MainService {
   products: any[] = [
     {
       id: 1,
-      name:"product",
-      price: 100,
-      old: "200",
+      name:"Sofa",
+      price: 9999,
+      old: 15000,
       img: "assets/img/img-products/product-7.png",
-      sub: "sub",
+      sub: "About the product",
       desc: "des",
       quantity: 1,
     },
     {
       id: 2,
-      name:"product",
-      price: 100,
-      old: "200",
+      name:"Dinning Table",
+      price: 17999,
+      old: 20000,
       img: "assets/img/img-products/product-8.png",
       sub: "sub",
       desc: "des",
@@ -46,9 +46,9 @@ export class MainService {
     },
     {
       id: 3,
-      name:"product",
-      price: 100,
-      old: "200",
+      name:"Cupboard",
+      price: 11000,
+      old: 15999,
       img: "assets/img/img-products/product-9.png",
       sub: "sub",
       desc: "des",
@@ -56,9 +56,9 @@ export class MainService {
     },
     {
       id: 4,
-      name:"product",
-      price: 100,
-      old: "200",
+      name:"Table",
+      price: 8999,
+      old: 12999,
       img: "assets/img/img-products/product-10.png",
       sub: "sub",
       desc: "des",
@@ -66,21 +66,21 @@ export class MainService {
     },
     {
       id: 5,
-      name:"product",
-      price: 100,
-      old: "200",
+      name:"Steele Shield",
+      price: 6999,
+      old: 13999,
       img: "assets/img/img-products/product-11.png",
-      sub: "sub",
+      sub: "About the product",
       desc: "des",
       quantity: 1,
     },
     {
       id: 6,
-      name:"product",
-      price: 100,
-      old: "200",
+      name:"Block",
+      price: 999,
+      old: 2999,
       img: "assets/img/img-products/product-12.png",
-      sub: "sub",
+      sub: "About the product",
       desc: "des",
       quantity: 1,
     },
@@ -88,35 +88,5 @@ export class MainService {
   ]
 
   cart=[
-    // {
-    //   id: 1,
-    //   name:"product",
-    //   price: 100,
-    //   old: "200",
-    //   img: "assets/img/img-products/product-12.png",
-    //   sub: "sub",
-    //   desc: "des",
-    //   quantity: 1,
-    // },
-    // {
-    //   id: 1,
-    //   name:"product",
-    //   price: 100,
-    //   old: "200",
-    //   img: "assets/img/img-products/product-12.png",
-    //   sub: "sub",
-    //   desc: "des",
-    //   quantity: 1,
-    // },
-    // {
-    //   id: 1,
-    //   name:"product",
-    //   price: 100,
-    //   old: "200",
-    //   img: "assets/img/img-products/product-12.png",
-    //   sub: "sub",
-    //   desc: "des",
-    //   quantity: 1,
-    // },
   ]
 }

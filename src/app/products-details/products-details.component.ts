@@ -9,16 +9,24 @@ import { MainService } from '../service/main.service';
 })
 export class ProductsDetailsComponent implements OnInit {
 
+  data:any = []
+
   getProjectDatas:any;
   projectData:any;
   constructor(private param:ActivatedRoute, public service: MainService){}
 
   ngOnInit(){
+    
+    this.service.getProdList().subscribe((content) => {
+      this.data = content;
+      console.log(this.data)
+    });
+
     this.getProjectDatas = this.param.snapshot.paramMap.get('id');
     console.log(this.getProjectDatas,'getProjectDatas');
     
     if (this.getProjectDatas) {
-      this.projectData = this.service.data.filter((value) => {
+      this.projectData = this.data.filter((value) => {
         return value.id == this.getProjectDatas;
       });
       console.log(this.projectData, 'projectData>>>');

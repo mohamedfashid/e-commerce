@@ -11,7 +11,7 @@
 
 <ng-container *ngFor="let item of this.projectData; let i = index">
   <!-- single product -->
-  <section class="single-product py-5">
+  <section class="single-product pt-5">
     <div class="container">
       <div class="row">
         <div class="col-10 mx-auto col-lg-4 my-5 text-center">
@@ -75,12 +75,9 @@
             </span>
           </div>
           <!-- end of ratings -->
-          <h2 class="text-uppercase my-2">
-            {{item.name}}
-          </h2>
-          <h2 class="text-uppercase my-2">
-            {{item.price}}
-          </h2>
+          <h2 class="mb-2">{{item.name}}</h2>
+          <h4 class="oldpr">₹ {{item.old}}</h4>
+          <h1>₹ {{item.price}}</h1>
           <p class="lead text-muted">
             {{item.sub}}
           </p>
@@ -97,19 +94,10 @@
             SIZES : XS S M L XL
           </h5>
           <!-- end of size -->
-          <!-- cart buttons -->
-          <div class="d-flex my-2">
-            <span class="btn btn-black mx-1">-</span>
-            <span class="btn btn-black mx-1">4</span>
-            <span class="btn btn-black mx-1">+</span>
-          </div>
-          <!-- <button class="btn btn-black my-2 mx-2">
-            Wishlist
-          </button> -->
-          <button class="btn btn-yellow my-2 mx-2">
-            Add To Cart
-          </button>
-          <!-- end of cart buttons -->
+          <button class="free-shipping my-1">Free shipping</button>
+          <h3 class="stock mt-3">
+            <i class="fa-solid fa-circle"></i> 50+ pcs. in stock.
+          </h3>
         </div>
       </div>
     </div>

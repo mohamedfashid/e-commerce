@@ -1,7 +1,7 @@
 <!-- header section -->
 <header id="header" class="header">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light container">
       <a routerLink="/" class="navbar-brand">
         <img src="assets/img/logo.png" alt="company logo" />
       </a>
@@ -13,30 +13,20 @@
       >
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="navbar-nav mx-auto">
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="myNavbar">
+        <ul class="navbar-nav me-5">
           <li class="nav-item mx-2" routerLinkActive="nav-active" [routerLinkActiveOptions]="{ exact: true }">
-            <a routerLink="/" class="nav-link">Home</a>
+            <a routerLink="/home" class="nav-link">Home</a>
           </li>
           <li class="nav-item mx-2"  routerLinkActive="nav-active">
             <a routerLink="/products" class="nav-link">Products</a>
-          </li>
-          <li class="nav-item mx-2"  routerLinkActive="nav-active">
-            <a routerLink="/singleproduct" class="nav-link">Single Product</a>
-          </li>
-          <li class="nav-item mx-2"  routerLinkActive="nav-active">
-            <a routerLink="/store" class="nav-link">Store</a>
           </li>
         </ul>
       </div>
       <div class="navbar-icons d-none d-lg-flex">
         <!-- single icon -->
-        <div class="navbar-icon mx-2"><i class="fas fa-search"></i></div>
-        <!-- end of single icon -->
-        <!-- single icon -->
-        <a routerLink="/store" class="navbar-icon mx-2 navbar-cart-icon">
-          <i class="fas fa-shopping-cart"></i>
-          <div class="cart-items">2</div>
+        <a class="btn c-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal" class="navbar-icon mx-2 navbar-cart-icon">
+          <i class="fas fa-shopping-cart c-pointer"></i>
         </a>
         <!-- end of  single icon -->
       </div>

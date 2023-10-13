@@ -19,16 +19,13 @@ export class CartComponent {
     this.data = data;
   }
 
-  // add(a: any[]) {
-  //   this.pop = true
-  //   console.log(a, this.selected);
-  //   this.selected = a;
-  //   // a = this.selected;
-  //   // console.log(this.selected);
-  // }
+  del(item:any) {
+    this.data.splice(item, 1);
+    console.log(item)
+  }
 
   decrease(prod:any){
-    if(prod !== 1 && prod < 1){
+    if (prod.quantity > 1) {
       prod.quantity -= 1;
       console.log(prod.quantity)
     }
@@ -38,7 +35,7 @@ export class CartComponent {
   }
 
   increase(prod:any){
-    if(prod != 5){
+    if(prod.quantity < 5){
       prod.quantity += 1;
       console.log(prod.quantity)
     }

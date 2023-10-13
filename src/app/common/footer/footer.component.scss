@@ -3,6 +3,7 @@
 /* footer section */
 .footer{
     background: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 .footer-title{
     padding: 0.4rem;
@@ -18,5 +19,8 @@
 }
 .contact-icon{
     color: var(--mainYellow);
+}
+.white{
+    color:#fff !important;
 }
 /* end of footer section */

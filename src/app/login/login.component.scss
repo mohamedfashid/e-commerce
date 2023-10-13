@@ -9,7 +9,7 @@
 
 ::selection{
     color: #ffffff;
-    background-color: #31285C;
+    background-color:var(--mainYellow);
    }
    
    *{
@@ -21,7 +21,7 @@
    }
    
    a{
-    color: #31285C;
+    color:var(--mainYellow);
    }
    
    
@@ -53,7 +53,7 @@
    
    
    .heading{
-    color: #3B3663;
+    color: #000;
     margin-bottom: 20px;
    }
    
@@ -76,7 +76,7 @@
     height: 45px;
     border: none;
     color: #FFFFFF;
-    background-color: #31285C;
+    background-color:var(--mainYellow);
     border-radius: 5px;
     font-size: 17px;
     font-weight: 500;
@@ -84,7 +84,7 @@
    }
    
    button:hover{
-    background-color: #31283B;
+    background-color: black;
    }
    
    .row{
@@ -110,7 +110,7 @@
    }
    
    input[type=checkbox]:checked ~ .custom-checkbox{
-    background-color: #31285C;
+    background-color:var(--mainYellow);
    }
    
    input[type=checkbox]:checked ~ .custom-checkbox::before {

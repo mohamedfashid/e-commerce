@@ -8,6 +8,9 @@
 .nav-link{
     font-size: 1.5rem;
     border-bottom: 0.1rem solid var(--mainWhite);
+    &:hover{
+        border-bottom: 0.1rem solid var(--mainYellow);
+    }
 }
 .nav-active{
     border-bottom: 0.1rem solid var(--mainYellow);
@@ -34,3 +37,7 @@
     padding: 0.2rem 0.3rem;
 }
 /* end of navbar */
+
+.c-pointer{
+    cursor: pointer;
+}

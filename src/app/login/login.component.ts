@@ -11,8 +11,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent {
   constructor(private authService: AuthServiceService, private router: Router, private fb: FormBuilder) {
     this.logInFormGroup = this.fb.group({
-      username: [null, Validators.required],
-      password: [null, Validators.required],
+      username: ["admin", Validators.required],
+      password: ["12345", Validators.required],
     });
   }
   logInFormGroup: FormGroup;
@@ -20,9 +20,12 @@ export class LoginComponent {
     const username = this.logInFormGroup.value.username;
     const password = this.logInFormGroup.value.password;
     console.log(this.authService.login(username, password))
-    
+
     if (this.authService.login(username, password)) {
       this.router.navigate(['/home']);
+
+      localStorage.setItem('auth', JSON.stringify(this.authService.login(username, password)))
+
     } else {
       console.log("test" + this.authService.login(username, password))
       alert("Username and Password")

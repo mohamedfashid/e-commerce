@@ -1,7 +1,42 @@
 // /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
 /* ganeral style */
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    src: url("assets/fonts/Poppins-Regular.ttf");
+}
+  
+@font-face {
+    font-family: "PoppinsBold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "cali";
+    src: url("assets/fonts/Calligraffitti-Regular.ttf");
+}
+
+h1{
+    font-family: "PoppinsBold"; 
+}
+h2{
+    font-family: "PoppinsBold"; 
+}
+h3{
+    font-family: "PoppinsBold"; 
+}
+h4{
+    font-family: "PoppinsBold"; 
+}
+
+.bold{
+    font-family: "PoppinsBold"; 
+}
 :root {
   --mainYellow: #fdbe02;
   --mainWhite: #fff;
@@ -12,10 +47,10 @@
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: "Mali", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .text-slanted {
-  font-family: "Calligraffitti", cursive;
+    font-family: "cali", cursive;
 }
 .btn-yellow{
     font-size: 1.2rem;
