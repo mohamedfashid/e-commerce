@@ -1,0 +1,43 @@
+<div class="flexalign">
+    <div class="wrapper">
+
+        <div class="heading">
+            <h2>Welcome!</h2>
+            <p>Sign In to your account</p>
+        </div>
+
+        <form [formGroup]="logInFormGroup">
+            <div class="input-group">
+                <input type="text" id="username" class="input-field" placeholder="Username" formControlName="username">
+                <div *ngIf="logInFormGroup.get('username').hasError('required') && logInFormGroup.get('username').touched" class="text-danger">Username is required.</div>
+
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" class="input-field" placeholder="Password"
+                    formControlName="password">
+                <div *ngIf="logInFormGroup.get('password').hasError('required') && logInFormGroup.get('password').touched" class="text-danger">Password is required.</div>
+            </div>
+        </form>
+
+        <div class="input-group row">
+
+            <div class="row">
+                <input type="checkbox" id="remember" hidden>
+                <label for="remember" class="custom-checkbox"></label>
+                <label for="remember">Remember me?</label>
+            </div>
+
+            <div class="row">
+                <a href="#" target="_blank">Forgot password?</a>
+            </div>
+        </div>
+
+
+        <div class="input-group">
+            <button (click)="login()" [disabled]="!logInFormGroup.valid">Login <i
+                    class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+</div>

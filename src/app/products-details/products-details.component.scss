@@ -1,0 +1,29 @@
+/* single product photo */
+.single-product-photo{
+    background: var(--TransGrey);
+    opacity: 0.5;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border: 0.1rem solid transparent;
+    box-sizing: border-box !important;
+}
+.rating-icon{
+    color: var(--mainYellow);
+}
+.product-size{
+    word-spacing: 1.5rem;
+}
+.single-product-photo:hover{
+    border: 0.1rem solid var(--mainYellow);
+    opacity: 1;
+}
+.product-info-link{
+    text-decoration: none;
+    color: var(--mainGrey);
+    transition: all 0.3s ease-in-out;
+}
+.product-info-link:hover{
+    color: var(--mainYellow);
+    text-decoration: none;
+}
+/* end of single product photo */

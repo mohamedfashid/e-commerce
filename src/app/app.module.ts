@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductsDetailsComponent } from './products-details/products-details.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { ProductsComponent } from './products/products.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductsDetailsComponent,
+    LoginComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
