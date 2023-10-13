@@ -20,9 +20,11 @@ export class LoginComponent {
     const username = this.logInFormGroup.value.username;
     const password = this.logInFormGroup.value.password;
     console.log(this.authService.login(username, password))
+    
     if (this.authService.login(username, password)) {
       this.router.navigate(['/home']);
     } else {
+      console.log("test" + this.authService.login(username, password))
       alert("Username and Password")
       this.router.navigate(['/login']);
   }

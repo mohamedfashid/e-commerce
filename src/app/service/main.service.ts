@@ -1,13 +1,29 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MainService {
 
-  constructor() { }
+  data: any[];
 
-  data = [
+  constructor() {
+    this.getProdList().subscribe((content) => {
+      this.data = content;
+      console.log(this.data)
+    });
+   }
+
+  // dataUrl = '../assets/json file/data.json';
+  // data:any = []
+
+  getProdList(): Observable<any> {
+    return of(this.products);    
+  }
+
+
+  products: any[] = [
     {
       id: 1,
       name:"product",

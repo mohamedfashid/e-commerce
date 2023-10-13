@@ -8,6 +8,7 @@ import { CartComponent } from '../cart/cart.component';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
+  // items: any[];
   constructor(public service:MainService){}
 
   add(item:any) {
@@ -15,4 +16,10 @@ export class ProductsComponent {
     console.log(item)
   }
 
+  // ngOnInit(): void {
+  //   this.service.getProdList().subscribe((data) => {
+  //     this.items = data;
+  //     console.log(this.items)
+  //   });
+  // }
 }
