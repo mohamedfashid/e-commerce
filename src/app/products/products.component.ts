@@ -12,6 +12,7 @@ export class ProductsComponent {
 
   add(item:any) {
     this.service.cart.push(item)
+    console.log(item)
   }
 
 }

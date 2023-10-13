@@ -11,7 +11,7 @@ export class CartComponent {
 
   recieved = [];
 
-  data = [];
+  data:any [];
 
   @Input('data')
   set dataSet(data) {
